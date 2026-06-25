@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalil Guechi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef2f7;
+    --card:#ffffff;
+    --ink:#0f1b2d;
+    --muted:#46566b;
+    --accent:#1d4ed8;
+    --accent-ink:#ffffff;
+    --line:#dde4ee;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px 16px;
+    min-height:100dvh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .card{
+    width:100%;
+    max-width:380px;
+    background:var(--card);
+    border-radius:24px;
+    padding:32px 26px 28px;
+    box-shadow:0 10px 40px rgba(15,27,45,.12);
+    text-align:center;
+  }
+  .photo{
+    width:140px;height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0 auto 18px;
+    display:block;
+    border:4px solid #fff;
+    box-shadow:0 4px 18px rgba(15,27,45,.18);
+  }
+  h1{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;}
+  .title{font-size:1.02rem;font-weight:600;color:var(--ink);margin-top:6px;}
+  .subtitle{font-size:.92rem;font-weight:500;color:var(--muted);margin-top:4px;}
+  .links{display:flex;flex-direction:column;gap:10px;margin-top:24px;}
+  .links a{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    text-decoration:none;
+    font-size:.97rem;font-weight:600;
+    padding:13px 16px;
+    border-radius:13px;
+    border:1.5px solid var(--line);
+    color:var(--ink);
+    background:#f7f9fc;
+    transition:background .15s,border-color .15s;
+  }
+  .links a:active{background:#eef2f7;}
+  .links a svg{width:18px;height:18px;flex:0 0 auto;}
+  .btn-contact{
+    width:100%;margin-top:18px;
+    font-family:inherit;font-size:1rem;font-weight:700;
+    padding:15px 16px;border:none;border-radius:13px;
+    background:var(--accent);color:var(--accent-ink);
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:9px;
+  }
+  .btn-contact:active{opacity:.9;}
+  .btn-contact svg{width:18px;height:18px;}
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="photo" src="photo.jpg" alt="Khalil Guechi">
+    <h1>Khalil Guechi</h1>
+    <p class="title">IT Master's Student</p>
+    <p class="subtitle">AI • Computer Vision • Entrepreneurship</p>
+
+    <nav class="links">
+      <a href="mailto:khalil.guechi10@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        Email
+      </a>
+      <a href="tel:+33664785325">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +33 6 64 78 53 25
+      </a>
+      <a href="https://fr.linkedin.com/in/khalil-guechi-312378203" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 17V9.99H6.01V17h2.33zM7.18 8.96a1.35 1.35 0 1 0 0-2.7 1.35 1.35 0 0 0 0 2.7zM18 17v-3.84c0-2.05-1.1-3-2.56-3-1.18 0-1.71.65-2 1.11v-.95h-2.33V17h2.33v-3.91c0-.21.02-.41.08-.56.16-.41.54-.84 1.17-.84.82 0 1.15.63 1.15 1.55V17H18z"/></svg>
+        LinkedIn
+      </a>
+    </nav>
+
+    <button class="btn-contact" id="addContact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+      Add to Contacts
+    </button>
+  </main>
+
+<script>
+document.getElementById('addContact').addEventListener('click', function(){
+  var vcard = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'N:Guechi;Ibrahim El Khalil;;;',
+    'FN:Ibrahim El Khalil Guechi',
+    'TITLE:IT Master\'s Student',
+    'EMAIL;TYPE=INTERNET:khalil.guechi10@gmail.com',
+    'TEL;TYPE=CELL:+33664785325',
+    'URL:https://fr.linkedin.com/in/khalil-guechi-312378203',
+    'END:VCARD'
+  ].join('\r\n');
+
+  var blob = new Blob([vcard], {type:'text/vcard;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'Khalil_Guechi.vcf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
